@@ -72,13 +72,13 @@
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
-let value = Number(prompt('Введіть число:'));
-let hour = Number.parseInt(value / 60);
-let min = value % 60;
+// let value = Number(prompt('Введіть число:'));
+// let hour = Number.parseInt(value / 60);
+// let min = value % 60;
 
-hour = String(hour).padStart(2, 0);
-min = String(min).padStart(2, 0);
-console.log(`${hour}:${min}`);
+// hour = String(hour).padStart(2, 0);
+// min = String(min).padStart(2, 0);
+// console.log(`${hour}:${min}`);
 
 
 // "abc".padStart(10); // "       abc"
@@ -171,7 +171,7 @@ console.log(`${hour}:${min}`);
 // function min(a, b) {
 //     if ((typeof a) === "string" || (typeof b) === "string") {
 //         return 'Not a number!';
-//     } 
+//     }
 //     return Math.min(a, b);
 // }
 // console.log(min("2", "tak"));
@@ -196,6 +196,16 @@ console.log(`${hour}:${min}`);
 // let userAge = Number(prompt('Your age:'))
 // console.log(isAdult(userAge));
 
+// function isAdult(age) {
+//     if (isNaN(age)) {
+//         return 'Not a number!';
+//     }
+//     return age >= 18 || confirm("Продовжити?");
+// }
+
+
+// let userAge = Number(prompt('Your age:'))
+// console.log(isAdult(userAge));
 
 // Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
 // Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
